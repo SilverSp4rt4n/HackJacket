@@ -129,7 +129,7 @@ while True:
                 mesg = widgets.messageWidget(draw,image,disp,key,value)
                 mesg.show()
             with open("/opt/interface/notifications.json","w") as data:
-                json.dump({},data)
+                data.write("{}")
     except:
         pass
 
